@@ -2,7 +2,6 @@
 * {
 	margin: 0;
 	padding: 0;
-	color: #f2f5f7;
 	font-family: sans-serif;
 	letter-spacing: 1px;
 	font-weight: 300;
@@ -18,8 +17,8 @@ nav {
 	width: 100vw;
 	background-color: #131418;
 	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+	color: #f2f5f7;
 	display: flex;
-	position: fixed;
 	z-index: 10;
 }
 
@@ -33,6 +32,8 @@ nav {
 /* Navigation - Styling Links*/
 
 .nav-links {
+	color: #f2f5f7;
+
 	display: flex;
 	list-style: none;
 	width: 88vw;
@@ -44,6 +45,7 @@ nav {
 .nav-links li a {
 	text-decoration: none;
 	margin: 0 0.7vw;
+	color: #f2f5f7;
 }
 .nav-links li a:hover {
 	color: #61dafb;
@@ -170,4 +172,40 @@ nav {
 }
 .toggle .line3 {
 	transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Hero */
+
+.hero {
+	background-image: url(images/ironman1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 800px;
+}
+
+.hero::before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.hero-explainer {
+	color: black;
+	position: fixed;
+	top: 40%;
+	left: 50%;
+	background-color: white;
+	width: 500px;
+	padding: 2em;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	border-radius: 25px;
+}
+.hero-explainer p {
+	width: 100%;
+	padding: 2em 0;
 }
