@@ -2,43 +2,84 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>RB Triathalon Training</title>
+		<title></title>
 		<meta name="description" content="" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;600&display=swap"
-			rel="stylesheet"
-		/>
 		<link rel="stylesheet" href="style.css" />
+		<script
+			src="https://kit.fontawesome.com/93f480a0e9.js"
+			crossorigin="anonymous"
+		></script>
 	</head>
 	<body>
 		<!-- Navigation -->
+
 		<nav>
-			<div class="logo">Age Grouper Fitness</div>
-			<div class="hamburger">
-				<div class="line1"></div>
-				<div class="line2"></div>
-				<div class="line3"></div>
-			</div>
-			<ul class="nav-links">
-				<li><a href="#" class="nav-link">Home</a></li>
-				<li><a href="#" class="nav-link">Our Process</a></li>
-				<li><a href="#" class="nav-link">Services</a></li>
-				<li><a class="join-button" href="#">Start Training</a></li>
+			<input type="checkbox" id="check" />
+			<label for="check" class="checkbtn">
+				<i class="fas fa-bars"></i>
+			</label>
+			<label class="logo"><a href="index.html">Age Grouper Fitness</a></label>
+			<ul class="navbar-items">
+				<li class="navbar-item">
+					<a class="navbar-link" href="index.html">Home</a>
+				</li>
+				<li class="navbar-item">
+					<a class="navbar-link" href="Pages/About.html">About</a>
+				</li>
+				<li class="navbar-item">
+					<a class="navbar-link" href="Pages/Services.html">Services</a>
+				</li>
+				<li class="navbar-item">
+					<a class="navbar-link" href="Pages/Contact.html">Contact</a>
+				</li>
+				<li class="navbar-item">
+					<a class="button" href="#">Contact</a>
+				</li>
 			</ul>
 		</nav>
 
-		<!-- Hero -->
+		<!-- Explainer -->
 
-		<section class="hero">
-			<div class="intro">
-				<h1>Age Grouper Fitness & Coaching</h1>
-				<h3>Triathalon Training Personalized to You</h3>
+		<section class="explainer">
+			<div class="explainer-intro">
+				<h1>Age Grouper Personal Training</h1>
+				<p>
+					Personalized and affordable personal training to help you succeed in
+					your racing goals.
+				</p>12/30 spots filled</p>
+				<form action="submit">
+					<input class="email" type="email" id="email" name="email" />
+					<input class="submit" type="submit" value="Reserve Your Spot" />
+				</form>
+				<p>Limited space available!</p>
 			</div>
 		</section>
 
-		<script src="index.js" async defer></script>
+		<!-- Information -->
+        <section class="information">
+            <div class="information-area">
+                <h2>10+ Years of Experience</h2>
+            </div>
+            <div class="information-area">
+                <h2>50 Races Completed</h2>
+            </div>
+            <div class="information-area">
+                <h2>15+ Clients Worked With</h2>
+            </div>
+            <div class="information-area">
+                <h2>Over 10,000 Miles Completed</h2>
+            </div>
+        </section>
+
+		<!-- About -->
+
+		
+
+
+		<!-- Pricing -->
+
+
+
 	</body>
 </html>
