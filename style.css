@@ -14,6 +14,12 @@
 	color: white;
 	font-size: 1rem;
 }
+
+.container {
+	margin: 0 auto;
+	max-width: 800px;
+	text-align: center;
+}
 /* Navigation */
 
 nav {
@@ -51,7 +57,7 @@ label.logo a {
 
 .navbar-link {
 	color: black;
-	font-size: 1rem;
+	font-size: 15px;
 	padding: 0.5rem 1rem;
 }
 
@@ -69,13 +75,13 @@ label.logo a {
 	display: none;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 940px) {
 	label.logo {
 		display: none;
 	}
 }
 
-@media (max-width: 1101px) {
+@media (max-width: 940px) {
 	.nav {
 		margin: 0;
 		padding: 0;
@@ -90,7 +96,7 @@ label.logo a {
 		position: fixed;
 		width: 100%;
 		height: 100vh;
-		background: #2c3e50;
+		background: white;
 		left: -100%;
 		transition: all 0.5s;
 		text-align: center;
@@ -163,4 +169,39 @@ label.logo a {
 	margin: 1rem;
 	border-radius: 10px;
 	text-align: center;
+}
+
+/* About */
+
+.about {
+	display: flex;
+	align-items: center;
+}
+
+.profile-img {
+	width: 400px;
+	height: 200px;
+	margin: 3em;
+	border-radius: 25px;
+}
+
+.about-explainer {
+	text-align: center;
+	margin: 0 3em;
+}
+
+.about-explainer h2 {
+	margin: 1em 0;
+}
+
+/* Process */
+
+.process {
+	display: flex;
+	align-items: center;
+}
+
+.process-explainer {
+	text-align: center;
+	margin: 0 3em;
 }
