@@ -5,6 +5,7 @@
 	text-decoration: none;
 	box-sizing: border-box;
 	left: 0;
+	font-family: "Poppins", sans-serif;
 }
 
 .button {
@@ -15,11 +16,6 @@
 	font-size: 1rem;
 }
 
-.container {
-	margin: 0 auto;
-	max-width: 800px;
-	text-align: center;
-}
 /* Navigation */
 
 nav {
@@ -76,16 +72,18 @@ label.logo a {
 }
 
 @media (max-width: 940px) {
-	label.logo {
-		display: none;
-	}
-}
+	/* General */
 
-@media (max-width: 940px) {
+	/* Navbar */
+
 	.nav {
 		margin: 0;
 		padding: 0;
 		width: 100%;
+	}
+
+	label.logo {
+		display: none;
 	}
 
 	.checkbtn {
@@ -120,6 +118,16 @@ label.logo a {
 	#check:checked ~ ul {
 		left: 0;
 	}
+
+	/* Explainer */
+
+	.explainer-intro {
+		width: 100%;
+	}
+
+	.profile-img {
+		display: none;
+	}
 }
 
 /* Explainer */
@@ -131,8 +139,9 @@ label.logo a {
 
 .explainer-intro {
 	margin: 0 auto;
-	padding: 4em;
-	width: 60%;
+	padding: 2rem;
+	border-radius: 10px;
+	width: 90%;
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -159,14 +168,14 @@ label.logo a {
 
 .information {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
 }
 
 .information-area {
+	margin: 1em auto;
 	font-size: 0.8em;
-	padding: 3em;
 	border: black solid 1px;
-	margin: 1rem;
+	padding: 2rem;
 	border-radius: 10px;
 	text-align: center;
 }
@@ -185,12 +194,12 @@ label.logo a {
 	border-radius: 25px;
 }
 
-.about-explainer {
+.section {
 	text-align: center;
-	margin: 0 3em;
+	margin: 3em;
 }
 
-.about-explainer h2 {
+.section h2 {
 	margin: 1em 0;
 }
 
@@ -201,7 +210,55 @@ label.logo a {
 	align-items: center;
 }
 
-.process-explainer {
+/* Pricing */
+
+.price-columns {
+	float: left;
+	width: 50%;
+	padding: 8px;
+}
+
+.price {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+
+.price .header {
+	background-color: #111;
+	color: white;
+	font-size: 25px;
+	border-radius: 10px;
+}
+
+.price li {
+	border-bottom: 1px solid #eee;
+	padding: 20px;
 	text-align: center;
-	margin: 0 3em;
+	border-radius: 10px;
+}
+
+.price .grey {
+	font-size: 20px;
+}
+
+.button {
+	background-color: #04aa6d;
+	border: none;
+	color: white;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+.included {
+	color: green;
+}
+
+.not-included {
+	color: red;
+	text-decoration: line-through;
 }
