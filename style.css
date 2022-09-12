@@ -72,8 +72,6 @@ label.logo a {
 }
 
 @media (max-width: 940px) {
-	/* General */
-
 	/* Navbar */
 
 	.nav {
@@ -128,6 +126,20 @@ label.logo a {
 	.profile-img {
 		display: none;
 	}
+
+	/* Explainer */
+
+	.explainer {
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.explainer-intro {
+		width: 300px;
+	}
+	.explainer h1 {
+		font-size: 1rem;
+	}
 }
 
 /* Explainer */
@@ -138,16 +150,20 @@ label.logo a {
 }
 
 .explainer-intro {
-	margin: 0 auto;
+	margin: 0;
 	padding: 2rem;
 	border-radius: 10px;
-	width: 90%;
+	width: 600px;
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .explainer-intro p,
 .explainer-intro h1 {
 	margin: 2em 0;
+}
+
+.explainer-intro h1 {
+	font-size: 3em;
 }
 
 .explainer-intro form {
@@ -166,9 +182,22 @@ label.logo a {
 
 /* Information */
 
-.information {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+@media (max-width: 600px) {
+	.information {
+		display: flex;
+		flex-direction: column;
+	}
+}
+@media (min-width: 605px) {
+	.information {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+}
+
+.information i {
+	font-size: 50px;
+	margin: 1rem 0;
 }
 
 .information-area {
@@ -176,6 +205,7 @@ label.logo a {
 	font-size: 0.8em;
 	border: black solid 1px;
 	padding: 2rem;
+	width: 300px;
 	border-radius: 10px;
 	text-align: center;
 }
@@ -183,31 +213,31 @@ label.logo a {
 /* About */
 
 .about {
+	margin: 0 auto;
 	display: flex;
 	align-items: center;
+	text-align: center;
+	flex-direction: column;
+	width: 70%;
 }
 
 .profile-img {
-	width: 400px;
+	width: 200px;
 	height: 200px;
-	margin: 3em;
+	margin-top: 2em;
 	border-radius: 25px;
 }
 
-.section {
-	text-align: center;
-	margin: 3em;
+.about-section {
+	margin: 2em;
 }
-
-.section h2 {
-	margin: 1em 0;
-}
-
 /* Process */
 
 .process {
 	display: flex;
 	align-items: center;
+	width: 90%;
+	text-align: center;
 }
 
 /* Pricing */
