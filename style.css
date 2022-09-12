@@ -218,7 +218,13 @@ label.logo a {
 	align-items: center;
 	text-align: center;
 	flex-direction: column;
-	width: 70%;
+	width: 100%;
+	background-color: antiquewhite;
+}
+
+.about-container {
+	margin: 0 auto;
+	width: 60%;
 }
 
 .profile-img {
@@ -234,11 +240,25 @@ label.logo a {
 /* Process */
 
 .process {
+	margin: 0 auto;
 	display: flex;
 	align-items: center;
-	width: 90%;
-	text-align: center;
+	flex-direction: column;
+	width: 100%;
+	color: white;
+	background-color: rosybrown;
 }
+
+.process-container {
+	margin: 0 auto;
+	width: 60%;
+}
+
+.process-section {
+	margin: 2em;
+}
+
+
 
 /* Pricing */
 
