@@ -116,30 +116,6 @@ label.logo a {
 	#check:checked ~ ul {
 		left: 0;
 	}
-
-	/* Explainer */
-
-	.explainer-intro {
-		width: 100%;
-	}
-
-	.profile-img {
-		display: none;
-	}
-
-	/* Explainer */
-
-	.explainer {
-		text-align: center;
-		margin: 0 auto;
-	}
-
-	.explainer-intro {
-		width: 300px;
-	}
-	.explainer h1 {
-		font-size: 1rem;
-	}
 }
 
 /* Explainer */
@@ -153,7 +129,6 @@ label.logo a {
 	margin: 0;
 	padding: 2rem;
 	border-radius: 10px;
-	width: 600px;
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -188,10 +163,11 @@ label.logo a {
 		flex-direction: column;
 	}
 }
+
 @media (min-width: 605px) {
 	.information {
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
 	}
 }
 
@@ -266,6 +242,10 @@ label.logo a {
 
 /* Pricing */
 
+.pricing {
+	margin: 2em 0;
+}
+
 .price-columns {
 	float: left;
 	width: 50%;
@@ -299,7 +279,7 @@ label.logo a {
 }
 
 .button {
-	background-color: #61d800;
+	background-color: green;
 	border: none;
 	color: white;
 	padding: 5px 20px;
